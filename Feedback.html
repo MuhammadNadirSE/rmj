@@ -53,85 +53,85 @@
             <li><a href="Projects.html">Projects</a></li>
             <li class="active">Feedback</li>
         </ul>
-    </div>
 
-    <div class="container-fluid">
-        <form class="form-signin" method="GET">
-            <div class="">
-                <div>
-                    <fieldset>
-                        <legend class="label label-info">Personal Info</legend>
-                        <span>First Name *</span><input type="text" class="form-control" maxlength="20" autocomplete="on" placeholder="First Name" required autofocus /><br />
-                        <span>Last Name *</span><input type="text" class="form-control" maxlength="20" autocomplete="on" placeholder="Last Name" required /><br />
-                        <span>Email *</span><input type="email" id="email" autocomplete="on" class="form-control" placeholder="abc@example.com" required onblur="validateEmail(this)" /><br />
-                        <span>Phone *</span><input type="tel" class="form-control" autocomplete="on" onkeydown=" return isNumberKey(this); " placeholder="03xxxxxxxxx" required /> <br />
-                        <span>Birthday *</span><input type="text" id="datepicker" class="form-control" placeholder="Date of birth" required autocomplete="on" /><br />
-                    </fieldset>
+
+        <div class="container-fluid">
+            <form class="form-signin" method="GET">
+                <div class="">
+                    <div>
+                        <fieldset>
+                            <legend class="label label-info">Personal Info</legend>
+                            <span>First Name *</span><input type="text" class="form-control" maxlength="20" autocomplete="on" placeholder="First Name" required autofocus /><br />
+                            <span>Last Name *</span><input type="text" class="form-control" maxlength="20" autocomplete="on" placeholder="Last Name" required /><br />
+                            <span>Email *</span><input type="email" id="email" autocomplete="on" class="form-control" placeholder="abc@example.com" required onblur="validateEmail(this)" /><br />
+                            <span>Phone *</span><input type="tel" class="form-control" autocomplete="on" onkeydown=" return isNumberKey(this); " placeholder="03xxxxxxxxx" required /> <br />
+                            <span>Birthday *</span><input type="text" id="datepicker" class="form-control" placeholder="Date of birth" required autocomplete="on" /><br />
+                        </fieldset>
+                    </div>
+                    <hr />
+                    <div>
+                        <fieldset>
+                            <legend class="label label-info">Educational Info</legend>
+                            <span>Education level *</span>
+                            <input list="eduLevel" class="form-control" placeholder="Education Level" required autocomplete="on" />
+                            <datalist id="eduLevel">
+                                <option value="Master">
+                                <option value="Bachelor">
+                                <option value="Intermediate">
+                                <option value="Matric">
+                            </datalist> <br />
+
+                        </fieldset>
+                    </div>
+                    <hr />
+                    <div>
+                        <fieldset>
+                            <legend class="label label-info">FeedBack</legend>
+
+                            <div class="form-control">
+                                <!--<span class="label label-warning" style="font-size: 16px">Rating:</span>-->
+                                <span><code style="font-size: 16px;">Rating:</code></span>
+                                <input class="radio-inline" type="radio" name="rating" id="rating1" value="option1" required> 1
+                                <input class="radio-inline" type="radio" name="rating" id="rating2" value="option2" required> 2
+                                <input class="radio-inline" type="radio" name="rating" id="rating3" value="option3" required> 3
+                                <input class="radio-inline" type="radio" name="rating" id="rating4" value="option3" required> 4
+                                <input class="radio-inline" type="radio" name="rating" id="rating5" value="option3" required> 5
+                            </div>
+
+                            <br /><br />
+                            <span>Comments</span>
+                            <textarea rows="5" class="form-control" placeholder="Comments..." id="message"></textarea>
+                        </fieldset>
+                    </div>
+                    <br />
+                    <input data-target="#" type="button" class="btn btn-sm btn-danger" id="CancelBtn" value="Clear" role="button" onclick="clearForm()" />
+                    <input type="submit" class="btn btn-sm btn-success" id="registerBtn" value="Submit" role="button" /><!--onclick="return validateForm();-->
+                    <br /><br />
                 </div>
-                <hr />
-                <div>
-                    <fieldset>
-                        <legend class="label label-info">Educational Info</legend>
-                        <span>Education level *</span>
-                        <input list="eduLevel" class="form-control" placeholder="Education Level" required autocomplete="on" />
-                        <datalist id="eduLevel">
-                            <option value="Master">
-                            <option value="Bachelor">
-                            <option value="Intermediate">
-                            <option value="Matric">
-                        </datalist> <br />
-
-                    </fieldset>
-                </div>
-                <hr />
-                <div>
-                    <fieldset>
-                        <legend class="label label-info">FeedBack</legend>
-
-                        <div class="form-control">
-                            <!--<span class="label label-warning" style="font-size: 16px">Rating:</span>-->
-                            <span><code style="font-size: 16px;">Rating:</code></span>
-                            <input class="radio-inline" type="radio" name="rating" id="rating1" value="option1" required> 1
-                            <input class="radio-inline" type="radio" name="rating" id="rating2" value="option2" required> 2
-                            <input class="radio-inline" type="radio" name="rating" id="rating3" value="option3" required> 3
-                            <input class="radio-inline" type="radio" name="rating" id="rating4" value="option3" required> 4
-                            <input class="radio-inline" type="radio" name="rating" id="rating5" value="option3" required> 5
-                        </div>
-
-                        <br /><br />
-                        <span>Comments</span>
-                        <textarea rows="5" class="form-control" placeholder="Comments..." id="message"></textarea>
-                    </fieldset>
-                </div>
-                <br />
-                <input data-target="#" type="button" class="btn btn-sm btn-danger" id="CancelBtn" value="Clear" role="button" onclick="clearForm()" />
-                <input type="submit" class="btn btn-sm btn-success" id="registerBtn" value="Submit" role="button" /><!--onclick="return validateForm();-->
-                <br /><br />
-            </div>
-        </form>
-    </div>
-    <hr />
-    <footer class="footer">
-        <div class="container">
-            <div style="text-align: center;">
-                <p class="text-muted" style="color: white">Copyright &copy; 2015. A Design by M.Jahangir.</p>
-                <p class="small list-inline">follow me on </p>
-                <ul class="list-inline  ">
-                    <li>
-                        <a href="https://www.facebook.com/RMJahangeer" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/100856427041410332112/" target="_blank"><i class="fa fa-2x fa-google-plus"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/rmjahangeer" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
-                    </li>
-                </ul>
-            </div>
+            </form>
         </div>
-    </footer>
+        <hr />
+        <footer class="footer">
+            <div class="container">
+                <div style="text-align: center;">
+                    <p class="text-muted" style="color: white">Copyright &copy; 2015. A Design by M.Jahangir.</p>
+                    <p class="small list-inline">follow me on </p>
+                    <ul class="list-inline  ">
+                        <li>
+                            <a href="https://www.facebook.com/RMJahangeer" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/100856427041410332112/" target="_blank"><i class="fa fa-2x fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/rmjahangeer" target="_blank"><i class="fa fa-2x fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
-
+    </div>
 
     <script src="JS/jquery-2.1.1.js"></script>
     <script src="JS/jquery-min.js"></script>
